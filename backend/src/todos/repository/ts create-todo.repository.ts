@@ -1,0 +1,14 @@
+import { PrismaService } from "src/shared/databases/prisma.database";
+import { CreateTodoDto } from "../dto/create-todo.dto";
+import { Injectable } from "@nestjs/common";
+
+
+
+@Injectable()
+export class createTodoRepository{
+    constructor(private readonly prisma: PrismaService) {}
+
+    async execute(data: CreateTodoDto) {
+        return await this.prisma.todo.create({ data });
+    }
+}
