@@ -3,7 +3,7 @@ import { CreateTodoDto } from "../dto/create-todo.dto";
 import { Injectable } from "@nestjs/common";
 
 @Injectable()
-export class createTodoRepository{
+export class FindallTodoRepository{
     constructor(private readonly prisma: PrismaService) {}
 
     async execute(data: CreateTodoDto) {

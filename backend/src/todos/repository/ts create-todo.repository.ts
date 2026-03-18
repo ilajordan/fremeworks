@@ -6,6 +6,9 @@ import { Injectable } from "@nestjs/common";
 
 @Injectable()
 export class createTodoRepository{
+    create(date: any) {
+        throw new Error("Method not implemented.");
+    }
     constructor(private readonly prisma: PrismaService) {}
 
     async execute(data: CreateTodoDto) {
