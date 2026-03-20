@@ -6,6 +6,9 @@ import { Injectable } from "@nestjs/common";
 
 @Injectable()
 export class createTodoRepository{
+    findAll() {
+        throw new Error("Method not implemented.");
+    }
     create(date: any) {
         throw new Error("Method not implemented.");
     }

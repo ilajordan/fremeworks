@@ -3,7 +3,10 @@ import { CreateTodoDto } from "../dto/create-todo.dto";
 import { Injectable } from "@nestjs/common";
 
 @Injectable()
-export class FindallTodoRepository{
+export class daFinllTodoRepository{
+    findAll() {
+        throw new Error("Method not implemented.");
+    }
     constructor(private readonly prisma: PrismaService) {}
 
     async execute(data: CreateTodoDto) {
